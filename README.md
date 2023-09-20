@@ -1,4 +1,4 @@
-# Project Trade
+# Epitech Project Trade
 
 ## Introduction
 
