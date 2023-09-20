@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 # -*- coding: iso-8859-1 -*
-""" Python starter bot for the Crypto Trader games, from ex-Riddles.io """
 __version__ = "1.0"
 
 import sys
@@ -29,7 +28,6 @@ class Bot:
             if tmp[1] == "game":
                 self.botState.update_game(tmp[2], tmp[3])
         if tmp[0] == "action":
-            # This won't work every time, but it works sometimes!
             dollars = self.botState.stacks["USDT"]
             current_closing_price = self.botState.charts["USDT_BTC"].closes[-1]
             affordable = dollars / current_closing_price
